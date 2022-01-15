@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="carregar()">
+    <header>CALCULADORA</header>
+    <div>
+        <form action="" method="post" name="calcform">
+            <fieldset>
+                <input type="text" name="visor" id="visor">
+                <br />
+                <br />
+                <table id="calc">
+                    <tr>
+                        <td><input type="button" name="num9" class="num" value="9" onclick="calcnum(9)"></td>
+                        <td><input type="button" name="num8" class="num" value="8" onclick="calcnum(8)"></td>
+                        <td><input type="button" name="num7" class="num" value="7" onclick="calcnum(7)"></td>
+                        <td><input type="button" name="somar" class="oper" value="+" onclick="calcparse('somar')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" name="num6" class="num" value="6" onclick="calcnum(6)"></td>
+                        <td><input type="button" name="num5" class="num" value="5" onclick="calcnum(5)"></td>
+                        <td><input type="button" name="num4" class="num" value="4" onclick="calcnum(4)"></td>
+                        <td><input type="button" name="subtrair" class="oper" value="-" onclick="calcparse('subtrair')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" name="num3" class="num" value="3" onclick="calcnum(3)"></td>
+                        <td><input type="button" name="num2" class="num" value="2" onclick="calcnum(2)"></td>
+                        <td><input type="button" name="num1" class="num" value="1" onclick="calcnum(1)"></td>
+                        <td><input type="button" name="multiplicar" class="oper" value="*" onclick="calcparse('multiplicar')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" name="num0" class="num" value="0" onclick="calcnum(0)"></td>
+                        <td><input type="button" name="igual" class="num" value="=" onclick="calcparse('resultado')"></td>
+                        <td><input type="button" name="limpar" class="num" value="C" onclick="calclimpar()"></td>
+                        <td><input type="button" name="dividir" class="oper" value="/" onclick="calcparse('dividir')"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

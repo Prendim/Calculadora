@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+}
+header{
+    color: white;
+    text-align: center;
+    font: normal 50px Sans-serif;
+    margin-top: 50px;
+}
+form fieldset{
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+}
+table{
+    margin: auto;
+    width: 50px;
+}
+input#visor{
+    text-align: right;
+    width: 250px;
+    height: 30px;   
+    border-radius: 5px;
+    border: 1px solid rgb(209, 209, 209);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.199);    
+}
+form input.num {
+    display: block;
+    background-color: rgb(219, 219, 219);
+    width: 50px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid rgb(228, 228, 228);
+}
+form input.oper {
+    display: block;
+    background-color: white;
+    width: 50px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid rgb(228, 228, 228);
+}
+div{
+    margin-top: 70px;
+    margin-left: 480px;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 280px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);
+}
